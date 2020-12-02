@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VentasModelStoreContainer" CdmEntityContainer="VentasEntities">
+    <EntitySetMapping Name="Tb_Cliente">
+      <EntityTypeMapping TypeName="VentasModel.Tb_Cliente">
+        <MappingFragment StoreEntitySet="Tb_Cliente">
+          <ScalarProperty Name="Id_cliente" ColumnName="Id_cliente" />
+          <ScalarProperty Name="Nombre_cliente" ColumnName="Nombre_cliente" />
+          <ScalarProperty Name="Apellido_cliente" ColumnName="Apellido_cliente" />
+          <ScalarProperty Name="Id_documento_identidad" ColumnName="Id_documento_identidad" />
+          <ScalarProperty Name="Numero_Documento" ColumnName="Numero_Documento" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Documento_Identidad">
+      <EntityTypeMapping TypeName="VentasModel.Tb_Documento_Identidad">
+        <MappingFragment StoreEntitySet="Tb_Documento_Identidad">
+          <ScalarProperty Name="Id_documento_identidad" ColumnName="Id_documento_identidad" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

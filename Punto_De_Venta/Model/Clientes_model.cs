@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Punto_De_Venta.Model
+{
+    public class Clientes_model
+    {
+     
+        public int Id { get; set; }
+    
+        public string Nombre { get; set; }
+      
+        public string Apellido { get; set; }
+
+        public string Documento { get; set; }
+  
+        public string Direccion { get; set; }
+     
+        public string Telefono { get; set; }
+
+        public string Descripcion_edintidad { get; set; }
+    }
+}

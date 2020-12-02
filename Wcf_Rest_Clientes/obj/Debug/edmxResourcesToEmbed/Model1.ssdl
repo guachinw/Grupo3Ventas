@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VentasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tb_Cliente">
+    <Key>
+      <PropertyRef Name="Id_cliente" />
+    </Key>
+    <Property Name="Id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_cliente" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Apellido_cliente" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Id_documento_identidad" Type="int" Nullable="false" />
+    <Property Name="Numero_Documento" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="9" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tb_Documento_Identidad">
+    <Key>
+      <PropertyRef Name="Id_documento_identidad" />
+    </Key>
+    <Property Name="Id_documento_identidad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Tb_Cliente_Tb_Documeto_Identidad">
+    <End Role="Tb_Documento_Identidad" Type="Self.Tb_Documento_Identidad" Multiplicity="1" />
+    <End Role="Tb_Cliente" Type="Self.Tb_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Documento_Identidad">
+        <PropertyRef Name="Id_documento_identidad" />
+      </Principal>
+      <Dependent Role="Tb_Cliente">
+        <PropertyRef Name="Id_documento_identidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="VentasModelStoreContainer">
+    <EntitySet Name="Tb_Cliente" EntityType="Self.Tb_Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Documento_Identidad" EntityType="Self.Tb_Documento_Identidad" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Tb_Cliente_Tb_Documeto_Identidad" Association="Self.FK_Tb_Cliente_Tb_Documeto_Identidad">
+      <End Role="Tb_Documento_Identidad" EntitySet="Tb_Documento_Identidad" />
+      <End Role="Tb_Cliente" EntitySet="Tb_Cliente" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

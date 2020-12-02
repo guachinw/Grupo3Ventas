@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b9cce2cb-df2b-45ad-a4ae-99b82a813363" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61771/Estado.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Estado.xsd" MetadataType="Schema" ID="b8c6765c-62ed-47c9-a1d0-1b2459eb8ed6" SourceId="1" SourceUrl="http://localhost:61771/Estado.svc?xsd=xsd1" />
+    <MetadataFile FileName="Estado1.xsd" MetadataType="Schema" ID="d50e78ab-cf21-4d91-abef-ae8456ee75cb" SourceId="1" SourceUrl="http://localhost:61771/Estado.svc?xsd=xsd2" />
+    <MetadataFile FileName="Estado2.xsd" MetadataType="Schema" ID="3cf5bb51-36df-4b99-a1a7-3a0341d92c63" SourceId="1" SourceUrl="http://localhost:61771/Estado.svc?xsd=xsd0" />
+    <MetadataFile FileName="Estado.wsdl" MetadataType="Wsdl" ID="70172bc0-e587-4d7b-a84e-878123b097bc" SourceId="1" SourceUrl="http://localhost:61771/Estado.svc?wsdl" />
+    <MetadataFile FileName="Estado.disco" MetadataType="Disco" ID="9785b488-35e7-4d6e-9982-345d51b9c405" SourceId="1" SourceUrl="http://localhost:61771/Estado.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

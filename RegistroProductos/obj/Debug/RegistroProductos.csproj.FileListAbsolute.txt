@@ -1,0 +1,6 @@
+C:\Users\ABDON\source\repos\RegistroProductos\bin\RegistroProductos.dll.config
+C:\Users\ABDON\source\repos\RegistroProductos\bin\RegistroProductos.dll
+C:\Users\ABDON\source\repos\RegistroProductos\bin\RegistroProductos.pdb
+C:\Users\ABDON\source\repos\RegistroProductos\obj\Debug\RegistroProductos.csproj.CoreCompileInputs.cache
+C:\Users\ABDON\source\repos\RegistroProductos\obj\Debug\RegistroProductos.dll
+C:\Users\ABDON\source\repos\RegistroProductos\obj\Debug\RegistroProductos.pdb

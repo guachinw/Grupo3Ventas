@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RegistroProductos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RegistroProductos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ProductoBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo_producto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado_producto" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Categoria" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Clase" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Deta_Producto" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_producto" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre_producto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Precio_producto" type="xs:float" />
+      <xs:element minOccurs="0" name="Stock_producto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductoBE" nillable="true" type="tns:ProductoBE" />
+</xs:schema>

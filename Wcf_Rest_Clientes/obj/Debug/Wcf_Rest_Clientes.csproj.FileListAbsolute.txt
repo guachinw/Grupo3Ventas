@@ -1,0 +1,12 @@
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\bin\Wcf_Rest_Clientes.dll.config
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\bin\Wcf_Rest_Clientes.dll
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\bin\Wcf_Rest_Clientes.pdb
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\bin\EntityFramework.dll
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\bin\EntityFramework.SqlServer.dll
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\bin\EntityFramework.xml
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\bin\EntityFramework.SqlServer.xml
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\obj\Debug\Wcf_Rest_Clientes.csprojAssemblyReference.cache
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\obj\Debug\Wcf_Rest_Clientes.csproj.CoreCompileInputs.cache
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\obj\Debug\Wcf_Rest_Clientes.csproj.CopyComplete
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\obj\Debug\Wcf_Rest_Clientes.dll
+C:\Users\ABDON\source\repos\Wcf_Rest_Clientes\obj\Debug\Wcf_Rest_Clientes.pdb

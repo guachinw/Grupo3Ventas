@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VentasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tb_Cliente">
+    <Key>
+      <PropertyRef Name="Id_cliente" />
+    </Key>
+    <Property Name="Id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_cliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellido_cliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Id_documento_identidad" Type="Int32" Nullable="false" />
+    <Property Name="Numero_Documento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Tb_Documento_Identidad" Relationship="Self.FK_Tb_Cliente_Tb_Documeto_Identidad" FromRole="Tb_Cliente" ToRole="Tb_Documento_Identidad" />
+  </EntityType>
+  <EntityType Name="Tb_Documento_Identidad">
+    <Key>
+      <PropertyRef Name="Id_documento_identidad" />
+    </Key>
+    <Property Name="Id_documento_identidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Tb_Cliente" Relationship="Self.FK_Tb_Cliente_Tb_Documeto_Identidad" FromRole="Tb_Documento_Identidad" ToRole="Tb_Cliente" />
+  </EntityType>
+  <Association Name="FK_Tb_Cliente_Tb_Documeto_Identidad">
+    <End Role="Tb_Documento_Identidad" Type="Self.Tb_Documento_Identidad" Multiplicity="1" />
+    <End Role="Tb_Cliente" Type="Self.Tb_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Documento_Identidad">
+        <PropertyRef Name="Id_documento_identidad" />
+      </Principal>
+      <Dependent Role="Tb_Cliente">
+        <PropertyRef Name="Id_documento_identidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="VentasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tb_Cliente" EntityType="Self.Tb_Cliente" />
+    <EntitySet Name="Tb_Documento_Identidad" EntityType="Self.Tb_Documento_Identidad" />
+    <AssociationSet Name="FK_Tb_Cliente_Tb_Documeto_Identidad" Association="Self.FK_Tb_Cliente_Tb_Documeto_Identidad">
+      <End Role="Tb_Documento_Identidad" EntitySet="Tb_Documento_Identidad" />
+      <End Role="Tb_Cliente" EntitySet="Tb_Cliente" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

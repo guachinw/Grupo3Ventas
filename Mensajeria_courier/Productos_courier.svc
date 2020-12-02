@@ -1,0 +1,4 @@
+﻿<%@ ServiceHost Language="C#" 
+    Debug="true" Service="Mensajeria_courier.Productos_courier" 
+    CodeBehind="Productos_courier.svc.cs" 
+    Factory="System.ServiceModel.Activation.WebServiceHostFactory"%>
